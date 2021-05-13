@@ -8,12 +8,8 @@ const score0El = document.getElementById('score--0'),
 	btnNew = document.querySelector('.btn--new'),
 	btnRoll = document.querySelector('.btn--roll'),
 	btnHold = document.querySelector('.btn--hold'),
-	current0El = document.getElementById('current--0'),
-	current1El = document.getElementById('current--1'),
 	player0El = document.querySelector('.player--0'),
-	player1El = document.querySelector('.player--1'),
-	playerScore0El = document.getElementById('score--0'),
-	playerScore1El = document.getElementById('score--1');
+	player1El = document.querySelector('.player--1');
 
 let scores, currentScore, activePlayer, playing;
 
@@ -67,7 +63,7 @@ btnHold.onclick = () => {
 
 	    document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
-        if (scores[activePlayer] >= 15) {
+        if (scores[activePlayer] >= 100) {
             playing = false;
             diceEl.classList.add('hidden');
 
