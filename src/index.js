@@ -12,8 +12,6 @@ const score0El = document.getElementById('score--0'),
 	player1El = document.querySelector('.player--1'),
     current0El = document.getElementById('current--0'),
     current1El = document.getElementById('current--1');
-    
-    ;
 
 let scores, currentScore, activePlayer, playing;
 
